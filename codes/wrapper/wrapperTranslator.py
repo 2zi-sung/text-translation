@@ -1,9 +1,9 @@
 import os
-from dataReader.rawDataReader import RawDataReader
-from preprocessor.characterProcessor import CharacterProcessor
-from resultManager.resultSaver import ResultSaver
-from translator.googleTranslator import GoogleTranslator
-from translator.papagoTranslator import PapagoTranslator
+from codes.dataReader.rawDataReader import RawDataReader
+from codes.preprocessor.characterProcessor import CharacterProcessor
+from codes.resultManager.resultSaver import ResultSaver
+from codes.translator.googleTranslator import GoogleTranslator
+from codes.translator.papagoTranslator import PapagoTranslator
 
 class WrapperTranslator:
     def __init__(self, data_path, translator_type):
@@ -29,7 +29,7 @@ class WrapperTranslator:
             df['translation_result'] = df['translation_result'].apply(lambda text: self.char_processor.replaceText(text, "Raw", "생"))
             translated_data.append((df, filename))
 
-        save_folder_path = os.path.join(save_result_folder, "translated_data")
+        save_folder_path = os.path.join(save_result_folder, "translatedData")
 
         if not os.path.exists(save_folder_path):
             os.makedirs(save_folder_path)
