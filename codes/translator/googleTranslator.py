@@ -1,9 +1,9 @@
-from googletrans import Translator as GoogleTranslator
+from googletrans import Translator
 import time
 
 class GoogleTranslator:
     def __init__(self):
-        self.google_translator = GoogleTranslator()
+        self.google_translator = Translator()
         self.counter = 0
 
     def translateLang(self, text, src_lang, dest_lang):
