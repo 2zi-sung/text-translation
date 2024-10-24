@@ -18,6 +18,7 @@ This project aims to streamline the translation process by offering a unified in
 ## 2. Project Structure
 
 The project is organized as follows:
+```plaintext
 .
 ├── codes/                         # Main code directory
 │   ├── dataReader/                # Module for reading raw data
