@@ -1,9 +1,10 @@
-# Text-Translator
+# Text-Translator API
 
 ## 1. Project Intro
 
-**Text-Translator** is a versatile tool designed to translate text between multiple languages using popular translation services like Google Translate and Papago.  
+**Text-Translator** is a versatile API designed to translate text between multiple languages using popular translation services like Google Translate and Papago.  
 This project aims to streamline the translation process by offering a unified interface for both services, allowing users to seamlessly switch between them.
+![Project Overview](data/text-translator.png)
 
 ### Key Features
 - **Feature 1: Multi-Language Translation Support**
