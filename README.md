@@ -1,6 +1,6 @@
 # Text-Translator
 
-## 1. Project Overview & Purpose
+## 1. Project Intro
 
 **Text-Translator** is a versatile tool designed to translate text between multiple languages using popular translation services like Google Translate and Papago.  
 This project aims to streamline the translation process by offering a unified interface for both services, allowing users to seamlessly switch between them.
@@ -20,25 +20,25 @@ This project aims to streamline the translation process by offering a unified in
 The project is organized as follows:
 ```plaintext
 .
-├── codes/                         # Main code directory
-│   ├── dataReader/                # Module for reading raw data
-│   │   └── rawDataReader.py       # Script for loading raw data from various sources
-│   ├── preprocessor/              # Module for data preprocessing
-│   │   └── characterProcessor.py  # Script for processing character data (e.g., cleaning, formatting)
-│   ├── resultManager/             # Module for managing results
-│   │   └── resultSaver.py         # Script for saving processed or translated results
+├── codes/                         
+│   ├── dataReader/                
+│   │   └── rawDataReader.py       
+│   ├── preprocessor/              
+│   │   └── characterProcessor.py  # Script for processing character data
+│   ├── resultManager/             
+│   │   └── resultSaver.py         
 │   ├── translator/                # Module for translation functionality
-│   │   ├── googleTranslator.py    # Google translation integration
-│   │   └── papagoTranslator.py    # Papago translation integration
-│   └── wrapper/                   # Wrapper module for managing different translation services
+│   │   ├── googleTranslator.py    
+│   │   └── papagoTranslator.py    
+│   └── wrapper/                   
 │       └── wrapperTranslator.py   # Unified interface to use both translation services (Google, Papago)
-├── data/                          # Data directory
+├── data/                          
 │   ├── rawData/                   # Folder containing raw, unprocessed data
 │   └── translatedData/            # Folder containing translated or processed data
 ├── main.py                        # Main script to run the project
-├── README.md                      # Project documentation
-└── requirements.txt               # List of dependencies required for the project
-
+├── README.md                      
+└── requirements.txt               
+```
 ## 3. How to Use the Project
 
 ### 3.1 Installation
